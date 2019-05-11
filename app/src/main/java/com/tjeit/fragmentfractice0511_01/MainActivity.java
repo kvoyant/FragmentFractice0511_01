@@ -101,12 +101,22 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
 //                버튼이 눌렸을때 하고 싶은 일 ??
-                /*
-                1. 지금 보여직 있는 Fragment 에 접근
-                =>현재 작성중인 MainActivity 에서 ?
+//                1. 지금 보여직 있는 Fragment 에 접근
+//                =>현재 작성중인 MainActivity 에서 ?
 
-                2. 접근한 Fragment에게
-                * */
+                Fragment currentFrag = pagerAdapter.getItem(act.viewPager.getCurrentItem());
+
+//                2. 접근한 Fragment에게 어떻게 작업 시킬지?
+                if(act.viewPager.getCurrentItem() == 0) {
+//                    currentFrag가 FragmentOne 이다 !
+                }
+                else if(act.viewPager.getCurrentItem() == 1) {
+//                    currnetFrag가 FragmentTwo이다 .
+                }
+                else if(act.viewPager.getCurrentItem() == 2) {
+//                    currnetFrag가 FragmentThree 이다 .
+                }
+//
 
             }
         });
