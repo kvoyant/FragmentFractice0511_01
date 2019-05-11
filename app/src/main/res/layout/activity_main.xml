@@ -36,11 +36,36 @@
                 />
 
         </LinearLayout>
-        <fragment
-            android:id="@+id/fragOne"
+
+        <HorizontalScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            class="com.tjeit.fragmentfractice0511_01.fragments.FragmentOne"/>
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <fragment
+                    android:id="@+id/fragOne"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    class="com.tjeit.fragmentfractice0511_01.fragments.FragmentOne"/>
+                <fragment
+                    android:id="@+id/fragTwo"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    class="com.tjeit.fragmentfractice0511_01.fragments.FragmentTwo"/>
+                <fragment
+                    android:id="@+id/fragThree"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    class="com.tjeit.fragmentfractice0511_01.fragments.FragmentThree"/>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
 
 
     </LinearLayout>
