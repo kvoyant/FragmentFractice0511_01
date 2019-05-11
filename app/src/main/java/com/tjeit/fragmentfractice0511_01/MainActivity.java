@@ -15,6 +15,8 @@ import com.tjeit.fragmentfractice0511_01.fragments.FragmentTwo;
 public class MainActivity extends BaseActivity {
     ActivityMainBinding act;
 
+    PagerAdapter pagerAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -95,6 +97,20 @@ public class MainActivity extends BaseActivity {
             }
         });
 
+        act.okBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                버튼이 눌렸을때 하고 싶은 일 ??
+                /*
+                1. 지금 보여직 있는 Fragment 에 접근
+                =>현재 작성중인 MainActivity 에서 ?
+
+                2. 접근한 Fragment에게
+                * */
+
+            }
+        });
+
     }
 
     @Override
@@ -102,7 +118,7 @@ public class MainActivity extends BaseActivity {
 
         act.viewPager.setOffscreenPageLimit(4);
 
-        PagerAdapter pagerAdapter = new PagerAdapter(getSupportFragmentManager(), 3);
+        pagerAdapter = new PagerAdapter(getSupportFragmentManager(), 3);
         act.viewPager.setAdapter((pagerAdapter));
     }
 
