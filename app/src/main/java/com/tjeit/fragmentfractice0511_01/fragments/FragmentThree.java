@@ -8,32 +8,26 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.tjeit.fragmentfractice0511_01.R;
-import com.tjeit.fragmentfractice0511_01.databinding.FragmentOneBinding;
+import com.tjeit.fragmentfractice0511_01.databinding.FragmentThreeBinding;
 
-public class FragmentOne extends Fragment {
+public class FragmentThree extends Fragment {
 
-    FragmentOneBinding binding;
+    FragmentThreeBinding binding;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-//        return inflater.inflate(R.layout.fragment_one, container, false);
-        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_one, container, false);
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_three, container, false);
 
         return binding.getRoot();
-
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-//        TextView myTextView = getActivity().findViewById(R.id.myTextView);
-//        myTextView.setText("JAVA");
-
-        binding.myTextView.setText("데이터 바인딩 이용");
+        binding.descTxt.setText("데이터 바인딩 이용");
     }
 }

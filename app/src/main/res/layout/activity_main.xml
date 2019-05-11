@@ -20,5 +20,11 @@
             android:layout_height="300dp"
             class="com.tjeit.fragmentfractice0511_01.fragments.FragmentTwo"/>
 
+        <fragment
+            android:id="@+id/fragThree"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            class="com.tjeit.fragmentfractice0511_01.fragments.FragmentThree"/>
+
     </LinearLayout>
 </layout>
