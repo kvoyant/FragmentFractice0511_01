@@ -10,6 +10,7 @@ import android.view.View;
 
 import com.tjeit.fragmentfractice0511_01.adapters.PagerAdapter;
 import com.tjeit.fragmentfractice0511_01.databinding.ActivityMainBinding;
+import com.tjeit.fragmentfractice0511_01.fragments.FragmentOne;
 import com.tjeit.fragmentfractice0511_01.fragments.FragmentTwo;
 
 public class MainActivity extends BaseActivity {
@@ -109,6 +110,7 @@ public class MainActivity extends BaseActivity {
 //                2. 접근한 Fragment에게 어떻게 작업 시킬지?
                 if(act.viewPager.getCurrentItem() == 0) {
 //                    currentFrag가 FragmentOne 이다 !
+                    ((FragmentOne) currentFrag).changeTextMsg(act.testEdt.getText().toString());
                 }
                 else if(act.viewPager.getCurrentItem() == 1) {
 //                    currnetFrag가 FragmentTwo이다 .
