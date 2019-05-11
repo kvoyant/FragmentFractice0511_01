@@ -41,7 +41,8 @@ public class FragmentOne extends Fragment {
             public void onClick(View v) {
                 String title = binding.titleEdt.getText().toString();
 
-                getActivity().setTitle(title);
+//                getActivity().setTitle(title);
+                ((MainActivity) getActivity()).setCustomTitle(title);
             }
         });
 
