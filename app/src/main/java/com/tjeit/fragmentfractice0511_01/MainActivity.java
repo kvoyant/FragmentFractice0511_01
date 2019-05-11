@@ -134,8 +134,15 @@ public class MainActivity extends BaseActivity {
         act.viewPager.setAdapter((pagerAdapter));
     }
 
+    public void setCustomTitle(String inputTitle) {
+        setTitle(String.format("입력값 : %s",inputTitle));
+        act.testEdt.setText(inputTitle);
+    }
+
     @Override
     public void bindViews() {
         act = DataBindingUtil.setContentView(this, R.layout.activity_main);
     }
+
+
 }

@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.tjeit.fragmentfractice0511_01.MainActivity;
 import com.tjeit.fragmentfractice0511_01.R;
 import com.tjeit.fragmentfractice0511_01.databinding.FragmentOneBinding;
 
