@@ -74,17 +74,15 @@ public class MainActivity extends BaseActivity {
 
             @Override
             public void onPageSelected(int i) {
-                if(i ==0) {
+                if (i == 0) {
                     act.changeFragOneBtn.setText("현재 선택됨");
                     act.changeFragTwoBtn.setText("2번 프래그먼트");
                     act.changeFragThreeBtn.setText("3번 프레그먼트");
-                }
-                else if(i==1) {
+                } else if (i == 1) {
                     act.changeFragOneBtn.setText("1번 프래그먼트");
                     act.changeFragTwoBtn.setText("현재 선택됨");
                     act.changeFragThreeBtn.setText("3번 프레그먼트");
-                }
-                else if(i==2) {
+                } else if (i == 2) {
                     act.changeFragOneBtn.setText("1번 프레그먼트");
                     act.changeFragTwoBtn.setText("2번 프레그먼트");
                     act.changeFragThreeBtn.setText("현재 선택됨");
@@ -101,6 +99,9 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void setValues() {
+
+        act.viewPager.setOffscreenPageLimit(4);
+
         PagerAdapter pagerAdapter = new PagerAdapter(getSupportFragmentManager(), 3);
         act.viewPager.setAdapter((pagerAdapter));
     }
